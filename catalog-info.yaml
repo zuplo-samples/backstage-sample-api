@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: backstage-sample-api # Your API name
+  annotations:
+    # Your github project slug Ex. org/repo-name
+    github.com/project-slug: zuplo-samples/backstage-sample-api
+spec:
+  type: openapi
+  lifecycle: experimental # Change to match your backstage project
+  owner: guests # Change to match your backstage project
+  system: examples # Change to match your backstage project
+  definition:
+    # Change to match your Zuplo API
+    $text: https://backstage-sample-api-main-821019a.zuplo.app/openapi
